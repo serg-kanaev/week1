@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Страница HTML5</title>
+  <meta charset="utf-8">
+  <script>
+    window.addEventListener('load', () => {
+      document.getElementById('bt').addEventListener('click', () => {
+        const url = document.getElementById('inp').value;
+        fetch(url).then(r => r.text()).then(text => document.getElementById('inp').value = text);
+      });
+    });
+  </script>
+ </head>
+ <body>
+  <input id="inp"/>
+  <button id="bt">btn</button>
+ </body>
+</html>

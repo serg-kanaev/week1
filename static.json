@@ -1,16 +1,19 @@
 {
   "headers": {
-    "/*": {
-      "X-Author": "the3rd",
+    "*": {
       "Access-Control-Allow-Origin": "*"
+    },
+    "/*": {
+      "X-Author": "the3rd"
     },
     "/login/*": {
-      "Content-Type": "text/plain; charset=UTF-8",
-      "Access-Control-Allow-Origin": "*"
+      "Content-Type": "text/plain; charset=UTF-8"
     },
     "/sample/*": {
-      "Content-Type": "text/plain",
-      "Access-Control-Allow-Origin": "*"
+      "Content-Type": "text/plain"
+    },
+    "/promise/*": {
+      "Content-Type": "text/plain"
     }
   }
 }
